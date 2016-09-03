@@ -1,0 +1,423 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddEventListener	event_dispatcher.go	/^func (d *eventDispatcher) AddEventListener(typ string, listener EventListener) {$/;"	f
+AddPeer	server.go	/^func (s *server) AddPeer(name string, connectiongString string) error {$/;"	f
+AppendEntries	server.go	/^func (s *server) AppendEntries(req *AppendEntriesRequest) *AppendEntriesResponse {$/;"	f
+AppendEntriesPath	http_transporter.go	/^func (t *HTTPTransporter) AppendEntriesPath() string {$/;"	f
+AppendEntriesRequest	append_entries.go	/^type AppendEntriesRequest struct {$/;"	t
+AppendEntriesRequest	protobuf/append_entries_request.pb.go	/^type AppendEntriesRequest struct {$/;"	t
+AppendEntriesResponse	append_entries.go	/^type AppendEntriesResponse struct {$/;"	t
+AppendEntriesResponse	protobuf/append_entries_responses.pb.go	/^type AppendEntriesResponse struct {$/;"	t
+Apply	commands.go	/^func (c *DefaultJoinCommand) Apply(server Server) (interface{}, error) {$/;"	f
+Apply	commands.go	/^func (c *DefaultLeaveCommand) Apply(server Server) (interface{}, error) {$/;"	f
+Apply	commands.go	/^func (c NOPCommand) Apply(server Server) (interface{}, error) {$/;"	f
+Apply	test.go	/^func (c *testCommand1) Apply(server Server) (interface{}, error) {$/;"	f
+Apply	test.go	/^func (c *testCommand2) Apply(server Server) (interface{}, error) {$/;"	f
+BenchmarkAppendEntriesRequestDecoding	append_entries_test.go	/^func BenchmarkAppendEntriesRequestDecoding(b *testing.B) {$/;"	f
+BenchmarkAppendEntriesRequestEncoding	append_entries_test.go	/^func BenchmarkAppendEntriesRequestEncoding(b *testing.B) {$/;"	f
+BenchmarkAppendEntriesResponseDecoding	append_entries_test.go	/^func BenchmarkAppendEntriesResponseDecoding(b *testing.B) {$/;"	f
+BenchmarkAppendEntriesResponseEncoding	append_entries_test.go	/^func BenchmarkAppendEntriesResponseEncoding(b *testing.B) {$/;"	f
+BenchmarkEventDispatch	event_dispatcher_test.go	/^func BenchmarkEventDispatch(b *testing.B) {$/;"	f
+BenchmarkSpeed	http_transporter_test.go	/^func BenchmarkSpeed(b *testing.B) {$/;"	f
+COVERPROFILE	Makefile	/^COVERPROFILE=cover.out$/;"	m
+Command	command.go	/^type Command interface {$/;"	t
+Command	log_entry.go	/^func (e *LogEntry) Command() []byte {$/;"	f
+CommandApply	command.go	/^type CommandApply interface {$/;"	t
+CommandEncoder	command.go	/^type CommandEncoder interface {$/;"	t
+CommandName	commands.go	/^func (c *DefaultJoinCommand) CommandName() string {$/;"	f
+CommandName	commands.go	/^func (c *DefaultLeaveCommand) CommandName() string {$/;"	f
+CommandName	commands.go	/^func (c NOPCommand) CommandName() string {$/;"	f
+CommandName	log_entry.go	/^func (e *LogEntry) CommandName() string {$/;"	f
+CommandName	test.go	/^func (c *testCommand1) CommandName() string {$/;"	f
+CommandName	test.go	/^func (c *testCommand2) CommandName() string {$/;"	f
+CommandTimeoutError	server.go	/^var CommandTimeoutError = errors.New("raft: Command timeout")$/;"	v
+CommitIndex	append_entries.go	/^func (aer *AppendEntriesResponse) CommitIndex() uint64 {$/;"	f
+CommitIndex	context.go	/^func (c *context) CommitIndex() uint64 {$/;"	f
+CommitIndex	log.go	/^func (l *Log) CommitIndex() uint64 {$/;"	f
+CommitIndex	server.go	/^func (s *server) CommitIndex() uint64 {$/;"	f
+Config	config.go	/^type Config struct {$/;"	t
+Context	context.go	/^type Context interface {$/;"	t
+Context	server.go	/^func (s *server) Context() interface{} {$/;"	f
+CurrentIndex	context.go	/^func (c *context) CurrentIndex() uint64 {$/;"	f
+CurrentTerm	context.go	/^func (c *context) CurrentTerm() uint64 {$/;"	f
+Decode	append_entries.go	/^func (req *AppendEntriesRequest) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	append_entries.go	/^func (resp *AppendEntriesResponse) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	commands.go	/^func (c NOPCommand) Decode(r io.Reader) error {$/;"	f
+Decode	log_entry.go	/^func (e *LogEntry) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	request_vote.go	/^func (req *RequestVoteRequest) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	request_vote.go	/^func (resp *RequestVoteResponse) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	snapshot.go	/^func (req *SnapshotRecoveryRequest) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	snapshot.go	/^func (req *SnapshotRecoveryResponse) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	snapshot.go	/^func (req *SnapshotRequest) Decode(r io.Reader) (int, error) {$/;"	f
+Decode	snapshot.go	/^func (resp *SnapshotResponse) Decode(r io.Reader) (int, error) {$/;"	f
+DefaultJoinCommand	commands.go	/^type DefaultJoinCommand struct {$/;"	t
+DefaultLeaveCommand	commands.go	/^type DefaultLeaveCommand struct {$/;"	t
+DispatchEvent	event_dispatcher.go	/^func (d *eventDispatcher) DispatchEvent(e Event) {$/;"	f
+Do	server.go	/^func (s *server) Do(command Command) (interface{}, error) {$/;"	f
+DuplicatePeerError	server.go	/^var DuplicatePeerError = errors.New("raft.Server: Duplicate peer")$/;"	v
+ElectionTimeout	server.go	/^func (s *server) ElectionTimeout() time.Duration {$/;"	f
+Encode	append_entries.go	/^func (req *AppendEntriesRequest) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	append_entries.go	/^func (resp *AppendEntriesResponse) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	commands.go	/^func (c NOPCommand) Encode(w io.Writer) error {$/;"	f
+Encode	log_entry.go	/^func (e *LogEntry) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	request_vote.go	/^func (req *RequestVoteRequest) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	request_vote.go	/^func (resp *RequestVoteResponse) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	snapshot.go	/^func (req *SnapshotRecoveryRequest) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	snapshot.go	/^func (req *SnapshotRecoveryResponse) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	snapshot.go	/^func (req *SnapshotRequest) Encode(w io.Writer) (int, error) {$/;"	f
+Encode	snapshot.go	/^func (resp *SnapshotResponse) Encode(w io.Writer) (int, error) {$/;"	f
+Event	event.go	/^type Event interface {$/;"	t
+EventListener	event_dispatcher.go	/^type EventListener func(Event)$/;"	t
+FlushCommitIndex	server.go	/^func (s *server) FlushCommitIndex() {$/;"	f
+GetCandidateName	protobuf/request_vote_request.pb.go	/^func (m *RequestVoteRequest) GetCandidateName() string {$/;"	f
+GetCommand	protobuf/log_entry.pb.go	/^func (m *LogEntry) GetCommand() []byte {$/;"	f
+GetCommandName	protobuf/log_entry.pb.go	/^func (m *LogEntry) GetCommandName() string {$/;"	f
+GetCommitIndex	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) GetCommitIndex() uint64 {$/;"	f
+GetCommitIndex	protobuf/append_entries_responses.pb.go	/^func (m *AppendEntriesResponse) GetCommitIndex() uint64 {$/;"	f
+GetCommitIndex	protobuf/snapshot_recovery_response.pb.go	/^func (m *SnapshotRecoveryResponse) GetCommitIndex() uint64 {$/;"	f
+GetConnectionString	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest_Peer) GetConnectionString() string {$/;"	f
+GetEntries	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) GetEntries() []*LogEntry {$/;"	f
+GetIndex	protobuf/append_entries_responses.pb.go	/^func (m *AppendEntriesResponse) GetIndex() uint64 {$/;"	f
+GetIndex	protobuf/log_entry.pb.go	/^func (m *LogEntry) GetIndex() uint64 {$/;"	f
+GetLastIndex	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) GetLastIndex() uint64 {$/;"	f
+GetLastIndex	protobuf/snapshot_request.pb.go	/^func (m *SnapshotRequest) GetLastIndex() uint64 {$/;"	f
+GetLastLogIndex	protobuf/request_vote_request.pb.go	/^func (m *RequestVoteRequest) GetLastLogIndex() uint64 {$/;"	f
+GetLastLogTerm	protobuf/request_vote_request.pb.go	/^func (m *RequestVoteRequest) GetLastLogTerm() uint64 {$/;"	f
+GetLastTerm	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) GetLastTerm() uint64 {$/;"	f
+GetLastTerm	protobuf/snapshot_request.pb.go	/^func (m *SnapshotRequest) GetLastTerm() uint64 {$/;"	f
+GetLeaderName	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) GetLeaderName() string {$/;"	f
+GetLeaderName	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) GetLeaderName() string {$/;"	f
+GetLeaderName	protobuf/snapshot_request.pb.go	/^func (m *SnapshotRequest) GetLeaderName() string {$/;"	f
+GetName	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest_Peer) GetName() string {$/;"	f
+GetPeers	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) GetPeers() []*SnapshotRecoveryRequest_Peer {$/;"	f
+GetPrevLogIndex	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) GetPrevLogIndex() uint64 {$/;"	f
+GetPrevLogTerm	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) GetPrevLogTerm() uint64 {$/;"	f
+GetState	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) GetState() []byte {$/;"	f
+GetState	server.go	/^func (s *server) GetState() string {$/;"	f
+GetSuccess	protobuf/append_entries_responses.pb.go	/^func (m *AppendEntriesResponse) GetSuccess() bool {$/;"	f
+GetSuccess	protobuf/snapshot_recovery_response.pb.go	/^func (m *SnapshotRecoveryResponse) GetSuccess() bool {$/;"	f
+GetSuccess	protobuf/snapshot_response.pb.go	/^func (m *SnapshotResponse) GetSuccess() bool {$/;"	f
+GetTerm	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) GetTerm() uint64 {$/;"	f
+GetTerm	protobuf/append_entries_responses.pb.go	/^func (m *AppendEntriesResponse) GetTerm() uint64 {$/;"	f
+GetTerm	protobuf/log_entry.pb.go	/^func (m *LogEntry) GetTerm() uint64 {$/;"	f
+GetTerm	protobuf/request_vote_request.pb.go	/^func (m *RequestVoteRequest) GetTerm() uint64 {$/;"	f
+GetTerm	protobuf/request_vote_responses.pb.go	/^func (m *RequestVoteResponse) GetTerm() uint64 {$/;"	f
+GetTerm	protobuf/snapshot_recovery_response.pb.go	/^func (m *SnapshotRecoveryResponse) GetTerm() uint64 {$/;"	f
+GetVoteGranted	protobuf/request_vote_responses.pb.go	/^func (m *RequestVoteResponse) GetVoteGranted() bool {$/;"	f
+HTTPMuxer	http_transporter.go	/^type HTTPMuxer interface {$/;"	t
+HTTPTransporter	http_transporter.go	/^type HTTPTransporter struct {$/;"	t
+HeartbeatInterval	server.go	/^func (s *server) HeartbeatInterval() time.Duration {$/;"	f
+Index	append_entries.go	/^func (aer *AppendEntriesResponse) Index() uint64 {$/;"	f
+Index	log_entry.go	/^func (e *LogEntry) Index() uint64 {$/;"	f
+Init	server.go	/^func (s *server) Init() error {$/;"	f
+Install	http_transporter.go	/^func (t *HTTPTransporter) Install(server Server, mux HTTPMuxer) {$/;"	f
+IsLogEmpty	server.go	/^func (s *server) IsLogEmpty() bool {$/;"	f
+JoinCommand	commands.go	/^type JoinCommand interface {$/;"	t
+LastActivity	peer.go	/^func (p *Peer) LastActivity() time.Time {$/;"	f
+LastCommandName	server.go	/^func (s *server) LastCommandName() string {$/;"	f
+Leader	server.go	/^func (s *server) Leader() string {$/;"	f
+LeaveCommand	commands.go	/^type LeaveCommand interface {$/;"	t
+Len	util.go	/^func (p uint64Slice) Len() int           { return len(p) }$/;"	f
+Less	util.go	/^func (p uint64Slice) Less(i, j int) bool { return p[i] < p[j] }$/;"	f
+LoadSnapshot	server.go	/^func (s *server) LoadSnapshot() error {$/;"	f
+Log	log.go	/^type Log struct {$/;"	t
+LogEntries	server.go	/^func (s *server) LogEntries() []*LogEntry {$/;"	f
+LogEntry	log_entry.go	/^type LogEntry struct {$/;"	t
+LogEntry	protobuf/log_entry.pb.go	/^type LogEntry struct {$/;"	t
+LogLevel	debug.go	/^func LogLevel() int {$/;"	f
+LogPath	server.go	/^func (s *server) LogPath() string {$/;"	f
+MemberCount	server.go	/^func (s *server) MemberCount() int {$/;"	f
+NOPCommand	commands.go	/^type NOPCommand struct {$/;"	t
+Name	server.go	/^func (s *server) Name() string {$/;"	f
+NewHTTPTransporter	http_transporter.go	/^func NewHTTPTransporter(prefix string, timeout time.Duration) *HTTPTransporter {$/;"	f
+NewServer	server.go	/^func NewServer(name string, path string, transporter Transporter, stateMachine StateMachine, ctx interface{}, connectionString string) (Server, error) {$/;"	f
+NodeName	commands.go	/^func (c *DefaultJoinCommand) NodeName() string {$/;"	f
+NodeName	commands.go	/^func (c *DefaultLeaveCommand) NodeName() string {$/;"	f
+NotLeaderError	server.go	/^var NotLeaderError = errors.New("raft.Server: Not current leader")$/;"	v
+Path	server.go	/^func (s *server) Path() string {$/;"	f
+Peer	peer.go	/^type Peer struct {$/;"	t
+Peers	server.go	/^func (s *server) Peers() map[string]*Peer {$/;"	f
+Prefix	http_transporter.go	/^func (t *HTTPTransporter) Prefix() string {$/;"	f
+PrevValue	event.go	/^func (e *event) PrevValue() interface{} {$/;"	f
+ProtoMessage	protobuf/append_entries_request.pb.go	/^func (*AppendEntriesRequest) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/append_entries_responses.pb.go	/^func (*AppendEntriesResponse) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/log_entry.pb.go	/^func (*LogEntry) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/request_vote_request.pb.go	/^func (*RequestVoteRequest) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/request_vote_responses.pb.go	/^func (*RequestVoteResponse) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/snapshot_recovery_request.pb.go	/^func (*SnapshotRecoveryRequest) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/snapshot_recovery_request.pb.go	/^func (*SnapshotRecoveryRequest_Peer) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/snapshot_recovery_response.pb.go	/^func (*SnapshotRecoveryResponse) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/snapshot_request.pb.go	/^func (*SnapshotRequest) ProtoMessage()    {}$/;"	f
+ProtoMessage	protobuf/snapshot_response.pb.go	/^func (*SnapshotResponse) ProtoMessage()    {}$/;"	f
+QuorumSize	server.go	/^func (s *server) QuorumSize() int {$/;"	f
+Recovery	statemachine_test.go	/^func (m *mockStateMachine) Recovery(b []byte) error {$/;"	f
+Recovery	test.go	/^func (sm *testStateMachine) Recovery(state []byte) error {$/;"	f
+RegisterCommand	command.go	/^func RegisterCommand(command Command) {$/;"	f
+RemoveEventListener	event_dispatcher.go	/^func (d *eventDispatcher) RemoveEventListener(typ string, listener EventListener) {$/;"	f
+RemovePeer	server.go	/^func (s *server) RemovePeer(name string) error {$/;"	f
+RequestSnapshot	server.go	/^func (s *server) RequestSnapshot(req *SnapshotRequest) *SnapshotResponse {$/;"	f
+RequestVote	server.go	/^func (s *server) RequestVote(req *RequestVoteRequest) *RequestVoteResponse {$/;"	f
+RequestVotePath	http_transporter.go	/^func (t *HTTPTransporter) RequestVotePath() string {$/;"	f
+RequestVoteRequest	protobuf/request_vote_request.pb.go	/^type RequestVoteRequest struct {$/;"	t
+RequestVoteRequest	request_vote.go	/^type RequestVoteRequest struct {$/;"	t
+RequestVoteResponse	protobuf/request_vote_responses.pb.go	/^type RequestVoteResponse struct {$/;"	t
+RequestVoteResponse	request_vote.go	/^type RequestVoteResponse struct {$/;"	t
+Reset	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) Reset()         { *m = AppendEntriesRequest{} }$/;"	f
+Reset	protobuf/append_entries_responses.pb.go	/^func (m *AppendEntriesResponse) Reset()         { *m = AppendEntriesResponse{} }$/;"	f
+Reset	protobuf/log_entry.pb.go	/^func (m *LogEntry) Reset()         { *m = LogEntry{} }$/;"	f
+Reset	protobuf/request_vote_request.pb.go	/^func (m *RequestVoteRequest) Reset()         { *m = RequestVoteRequest{} }$/;"	f
+Reset	protobuf/request_vote_responses.pb.go	/^func (m *RequestVoteResponse) Reset()         { *m = RequestVoteResponse{} }$/;"	f
+Reset	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) Reset()         { *m = SnapshotRecoveryRequest{} }$/;"	f
+Reset	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest_Peer) Reset()         { *m = SnapshotRecoveryRequest_Peer{} }$/;"	f
+Reset	protobuf/snapshot_recovery_response.pb.go	/^func (m *SnapshotRecoveryResponse) Reset()         { *m = SnapshotRecoveryResponse{} }$/;"	f
+Reset	protobuf/snapshot_request.pb.go	/^func (m *SnapshotRequest) Reset()         { *m = SnapshotRequest{} }$/;"	f
+Reset	protobuf/snapshot_response.pb.go	/^func (m *SnapshotResponse) Reset()         { *m = SnapshotResponse{} }$/;"	f
+Running	server.go	/^func (s *server) Running() bool {$/;"	f
+Save	statemachine_test.go	/^func (m *mockStateMachine) Save() ([]byte, error) {$/;"	f
+Save	test.go	/^func (sm *testStateMachine) Save() ([]byte, error) {$/;"	f
+SendAppendEntriesRequest	http_transporter.go	/^func (t *HTTPTransporter) SendAppendEntriesRequest(server Server, peer *Peer, req *AppendEntriesRequest) *AppendEntriesResponse {$/;"	f
+SendAppendEntriesRequest	test.go	/^func (t *testTransporter) SendAppendEntriesRequest(server Server, peer *Peer, req *AppendEntriesRequest) *AppendEntriesResponse {$/;"	f
+SendSnapshotRecoveryRequest	http_transporter.go	/^func (t *HTTPTransporter) SendSnapshotRecoveryRequest(server Server, peer *Peer, req *SnapshotRecoveryRequest) *SnapshotRecoveryResponse {$/;"	f
+SendSnapshotRecoveryRequest	test.go	/^func (t *testTransporter) SendSnapshotRecoveryRequest(server Server, peer *Peer, req *SnapshotRecoveryRequest) *SnapshotRecoveryResponse {$/;"	f
+SendSnapshotRequest	http_transporter.go	/^func (t *HTTPTransporter) SendSnapshotRequest(server Server, peer *Peer, req *SnapshotRequest) *SnapshotResponse {$/;"	f
+SendSnapshotRequest	test.go	/^func (t *testTransporter) SendSnapshotRequest(server Server, peer *Peer, req *SnapshotRequest) *SnapshotResponse {$/;"	f
+SendVoteRequest	http_transporter.go	/^func (t *HTTPTransporter) SendVoteRequest(server Server, peer *Peer, req *RequestVoteRequest) *RequestVoteResponse {$/;"	f
+SendVoteRequest	test.go	/^func (t *testTransporter) SendVoteRequest(server Server, peer *Peer, req *RequestVoteRequest) *RequestVoteResponse {$/;"	f
+Server	context.go	/^func (c *context) Server() Server {$/;"	f
+Server	server.go	/^type Server interface {$/;"	t
+SetElectionTimeout	server.go	/^func (s *server) SetElectionTimeout(duration time.Duration) {$/;"	f
+SetHeartbeatInterval	server.go	/^func (s *server) SetHeartbeatInterval(duration time.Duration) {$/;"	f
+SetLogLevel	debug.go	/^func SetLogLevel(level int) {$/;"	f
+SetTransporter	server.go	/^func (s *server) SetTransporter(t Transporter) {$/;"	f
+Snapshot	snapshot.go	/^type Snapshot struct {$/;"	t
+SnapshotPath	http_transporter.go	/^func (t *HTTPTransporter) SnapshotPath() string {$/;"	f
+SnapshotPath	server.go	/^func (s *server) SnapshotPath(lastIndex uint64, lastTerm uint64) string {$/;"	f
+SnapshotRecoveryPath	http_transporter.go	/^func (t *HTTPTransporter) SnapshotRecoveryPath() string {$/;"	f
+SnapshotRecoveryRequest	protobuf/snapshot_recovery_request.pb.go	/^type SnapshotRecoveryRequest struct {$/;"	t
+SnapshotRecoveryRequest	server.go	/^func (s *server) SnapshotRecoveryRequest(req *SnapshotRecoveryRequest) *SnapshotRecoveryResponse {$/;"	f
+SnapshotRecoveryRequest	snapshot.go	/^type SnapshotRecoveryRequest struct {$/;"	t
+SnapshotRecoveryRequest_Peer	protobuf/snapshot_recovery_request.pb.go	/^type SnapshotRecoveryRequest_Peer struct {$/;"	t
+SnapshotRecoveryResponse	protobuf/snapshot_recovery_response.pb.go	/^type SnapshotRecoveryResponse struct {$/;"	t
+SnapshotRecoveryResponse	snapshot.go	/^type SnapshotRecoveryResponse struct {$/;"	t
+SnapshotRequest	protobuf/snapshot_request.pb.go	/^type SnapshotRequest struct {$/;"	t
+SnapshotRequest	snapshot.go	/^type SnapshotRequest struct {$/;"	t
+SnapshotResponse	protobuf/snapshot_response.pb.go	/^type SnapshotResponse struct {$/;"	t
+SnapshotResponse	snapshot.go	/^type SnapshotResponse struct {$/;"	t
+Source	event.go	/^func (e *event) Source() interface{} {$/;"	f
+Start	server.go	/^func (s *server) Start() error {$/;"	f
+State	server.go	/^func (s *server) State() string {$/;"	f
+StateMachine	server.go	/^func (s *server) StateMachine() StateMachine {$/;"	f
+StateMachine	statemachine.go	/^type StateMachine interface {$/;"	t
+Stop	server.go	/^func (s *server) Stop() {$/;"	f
+StopError	server.go	/^var StopError = errors.New("raft: Has been stopped")$/;"	v
+String	protobuf/append_entries_request.pb.go	/^func (m *AppendEntriesRequest) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/append_entries_responses.pb.go	/^func (m *AppendEntriesResponse) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/log_entry.pb.go	/^func (m *LogEntry) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/request_vote_request.pb.go	/^func (m *RequestVoteRequest) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/request_vote_responses.pb.go	/^func (m *RequestVoteResponse) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/snapshot_recovery_request.pb.go	/^func (m *SnapshotRecoveryRequest_Peer) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/snapshot_recovery_response.pb.go	/^func (m *SnapshotRecoveryResponse) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/snapshot_request.pb.go	/^func (m *SnapshotRequest) String() string { return proto.CompactTextString(m) }$/;"	f
+String	protobuf/snapshot_response.pb.go	/^func (m *SnapshotResponse) String() string { return proto.CompactTextString(m) }$/;"	f
+Success	append_entries.go	/^func (aer *AppendEntriesResponse) Success() bool {$/;"	f
+Swap	util.go	/^func (p uint64Slice) Swap(i, j int)      { p[i], p[j] = p[j], p[i] }$/;"	f
+TakeSnapshot	server.go	/^func (s *server) TakeSnapshot() error {$/;"	f
+Term	append_entries.go	/^func (aer *AppendEntriesResponse) Term() uint64 {$/;"	f
+Term	log_entry.go	/^func (e *LogEntry) Term() uint64 {$/;"	f
+Term	server.go	/^func (s *server) Term() uint64 {$/;"	f
+TestDispatchEvent	event_dispatcher_test.go	/^func TestDispatchEvent(t *testing.T) {$/;"	f
+TestEventListener	event_dispatcher_test.go	/^func TestEventListener(t *testing.T) {$/;"	f
+TestGC	z_test.go	/^func TestGC(t *testing.T) {$/;"	f
+TestHTTPTransporter	http_transporter_test.go	/^func TestHTTPTransporter(t *testing.T) {$/;"	f
+TestLogContainsEntries	log_test.go	/^func TestLogContainsEntries(t *testing.T) {$/;"	f
+TestLogExistingLog	log_test.go	/^func TestLogExistingLog(t *testing.T) {$/;"	f
+TestLogNewLog	log_test.go	/^func TestLogNewLog(t *testing.T) {$/;"	f
+TestLogRecovery	log_test.go	/^func TestLogRecovery(t *testing.T) {$/;"	f
+TestLogTruncate	log_test.go	/^func TestLogTruncate(t *testing.T) {$/;"	f
+TestProcessVoteResponse	server_test.go	/^func TestProcessVoteResponse(t *testing.T) {$/;"	f
+TestRemoveEventListener	event_dispatcher_test.go	/^func TestRemoveEventListener(t *testing.T) {$/;"	f
+TestServerAppendEntries	server_test.go	/^func TestServerAppendEntries(t *testing.T) {$/;"	f
+TestServerAppendEntriesOverwritesUncommittedEntries	server_test.go	/^func TestServerAppendEntriesOverwritesUncommittedEntries(t *testing.T) {$/;"	f
+TestServerAppendEntriesRejectedIfAlreadyCommitted	server_test.go	/^func TestServerAppendEntriesRejectedIfAlreadyCommitted(t *testing.T) {$/;"	f
+TestServerAppendEntriesWithStaleTermsAreRejected	server_test.go	/^func TestServerAppendEntriesWithStaleTermsAreRejected(t *testing.T) {$/;"	f
+TestServerDenyCommandExecutionWhenFollower	server_test.go	/^func TestServerDenyCommandExecutionWhenFollower(t *testing.T) {$/;"	f
+TestServerMultiNode	server_test.go	/^func TestServerMultiNode(t *testing.T) {$/;"	f
+TestServerPromote	server_test.go	/^func TestServerPromote(t *testing.T) {$/;"	f
+TestServerPromoteSelf	server_test.go	/^func TestServerPromoteSelf(t *testing.T) {$/;"	f
+TestServerRecoverFromPreviousLogAndConf	server_test.go	/^func TestServerRecoverFromPreviousLogAndConf(t *testing.T) {$/;"	f
+TestServerRequestVote1	server_test.go	/^func TestServerRequestVote1(t *testing.T) {$/;"	f
+TestServerRequestVoteApprovedIfAlreadyVotedInOlderTerm	server_test.go	/^func TestServerRequestVoteApprovedIfAlreadyVotedInOlderTerm(t *testing.T) {$/;"	f
+TestServerRequestVoteDeniedForStaleTerm	server_test.go	/^func TestServerRequestVoteDeniedForStaleTerm(t *testing.T) {$/;"	f
+TestServerRequestVoteDeniedIfAlreadyVoted	server_test.go	/^func TestServerRequestVoteDeniedIfAlreadyVoted(t *testing.T) {$/;"	f
+TestServerRequestVoteDenyIfCandidateLogIsBehind	server_test.go	/^func TestServerRequestVoteDenyIfCandidateLogIsBehind(t *testing.T) {$/;"	f
+TestServerSingleNode	server_test.go	/^func TestServerSingleNode(t *testing.T) {$/;"	f
+TestSnapshot	snapshot_test.go	/^func TestSnapshot(t *testing.T) {$/;"	f
+TestSnapshotRecovery	snapshot_test.go	/^func TestSnapshotRecovery(t *testing.T) {$/;"	f
+TestSnapshotRequest	snapshot_test.go	/^func TestSnapshotRequest(t *testing.T) {$/;"	f
+Test_AppendEntriesRequestEncoding	append_entries_test.go	/^func Test_AppendEntriesRequestEncoding(t *testing.T) {$/;"	f
+Transporter	server.go	/^func (s *server) Transporter() Transporter {$/;"	f
+Transporter	transporter.go	/^type Transporter interface {$/;"	t
+Type	event.go	/^func (e *event) Type() string {$/;"	f
+Value	event.go	/^func (e *event) Value() interface{} {$/;"	f
+VotedFor	server.go	/^func (s *server) VotedFor() string {$/;"	f
+_assert	util.go	/^func _assert(condition bool, msg string, v ...interface{}) {$/;"	f
+afterBetween	util.go	/^func afterBetween(min time.Duration, max time.Duration) <-chan time.Time {$/;"	f
+appendEntries	log.go	/^func (l *Log) appendEntries(entries []*protobuf.LogEntry) error {$/;"	f
+appendEntriesHandler	http_transporter.go	/^func (t *HTTPTransporter) appendEntriesHandler(server Server) http.HandlerFunc {$/;"	f
+appendEntry	log.go	/^func (l *Log) appendEntry(entry *LogEntry) error {$/;"	f
+buf	append_entries_test.go	/^		var buf bytes.Buffer$/;"	v
+buf	append_entries_test.go	/^	var buf bytes.Buffer$/;"	v
+buf	log_entry.go	/^	var buf bytes.Buffer$/;"	v
+candidateLoop	server.go	/^func (s *server) candidateLoop() {$/;"	f
+checksum	server.go	/^	var checksum uint32$/;"	v
+clone	peer.go	/^func (p *Peer) clone() *Peer {$/;"	f
+close	log.go	/^func (l *Log) close() {$/;"	f
+commandName	log_entry.go	/^	var commandName string$/;"	v
+commandTypes	command.go	/^var commandTypes map[string]Command$/;"	v
+commitInfo	log.go	/^func (l *Log) commitInfo() (index uint64, term uint64) {$/;"	f
+compact	log.go	/^func (l *Log) compact(index uint64, term uint64) error {$/;"	f
+containsEntry	log.go	/^func (l *Log) containsEntry(index uint64, term uint64) bool {$/;"	f
+context	context.go	/^type context struct {$/;"	t
+count	event_dispatcher_test.go	/^	var count int$/;"	v
+createEntry	log.go	/^func (l *Log) createEntry(term uint64, command Command, e *ev) (*LogEntry, error) {$/;"	f
+createTestAppendEntriesRequest	append_entries_test.go	/^func createTestAppendEntriesRequest(entryCount int) (*AppendEntriesRequest, []byte) {$/;"	f
+createTestAppendEntriesResponse	append_entries_test.go	/^func createTestAppendEntriesResponse(entryCount int) (*AppendEntriesResponse, []byte) {$/;"	f
+currentIndex	log.go	/^func (l *Log) currentIndex() uint64 {$/;"	f
+currentTerm	log.go	/^func (l *Log) currentTerm() uint64 {$/;"	f
+debug	debug.go	/^func debug(v ...interface{}) {$/;"	f
+debugf	debug.go	/^func debugf(format string, v ...interface{}) {$/;"	f
+debugln	debug.go	/^func debugln(v ...interface{}) {$/;"	f
+debugln	server.go	/^func (s *server) debugln(v ...interface{}) {$/;"	f
+deprecatedCommandApply	command.go	/^type deprecatedCommandApply interface {$/;"	t
+entries	log.go	/^	var entries []*LogEntry$/;"	v
+err	log.go	/^	var err error$/;"	v
+err	server.go	/^			var err error$/;"	v
+err	server.go	/^		var err error$/;"	v
+err	server_test.go	/^	var err error$/;"	v
+ev	server.go	/^type ev struct {$/;"	t
+event	event.go	/^type event struct {$/;"	t
+eventDispatcher	event_dispatcher.go	/^type eventDispatcher struct {$/;"	t
+eventListeners	event_dispatcher.go	/^type eventListeners []EventListener$/;"	t
+flush	peer.go	/^func (p *Peer) flush() {$/;"	f
+flushCommitIndex	log.go	/^func (l *Log) flushCommitIndex() {$/;"	f
+followerLoop	server.go	/^func (s *server) followerLoop() {$/;"	f
+getEntriesAfter	log.go	/^func (l *Log) getEntriesAfter(index uint64, maxLogEntriesPerRequest uint64) ([]*LogEntry, uint64) {$/;"	f
+getEntry	log.go	/^func (l *Log) getEntry(index uint64) *LogEntry {$/;"	f
+getLogPath	test.go	/^func getLogPath() string {$/;"	f
+getPrevLogIndex	peer.go	/^func (p *Peer) getPrevLogIndex() uint64 {$/;"	f
+heartbeat	peer.go	/^func (p *Peer) heartbeat(c chan bool) {$/;"	f
+html	Makefile	/^	go tool cover -html=$(COVERPROFILE)$/;"	m
+indices	server.go	/^	var indices []uint64$/;"	v
+init	command.go	/^func init() {$/;"	f
+init	debug.go	/^func init() {$/;"	f
+init	protobuf/append_entries_request.pb.go	/^func init() {$/;"	f
+init	protobuf/append_entries_responses.pb.go	/^func init() {$/;"	f
+init	protobuf/log_entry.pb.go	/^func init() {$/;"	f
+init	protobuf/request_vote_request.pb.go	/^func init() {$/;"	f
+init	protobuf/request_vote_responses.pb.go	/^func init() {$/;"	f
+init	protobuf/snapshot_recovery_request.pb.go	/^func init() {$/;"	f
+init	protobuf/snapshot_recovery_response.pb.go	/^func init() {$/;"	f
+init	protobuf/snapshot_request.pb.go	/^func init() {$/;"	f
+init	protobuf/snapshot_response.pb.go	/^func init() {$/;"	f
+init	server.go	/^func init() {$/;"	f
+init	test.go	/^func init() {$/;"	f
+internalCurrentIndex	log.go	/^func (l *Log) internalCurrentIndex() uint64 {$/;"	f
+isEmpty	log.go	/^func (l *Log) isEmpty() bool {$/;"	f
+joinPath	http_transporter.go	/^func joinPath(connectionString, thePath string) string {$/;"	f
+lastCommandName	log.go	/^func (l *Log) lastCommandName() string {$/;"	f
+lastInfo	log.go	/^func (l *Log) lastInfo() (index uint64, term uint64) {$/;"	f
+leader	server_test.go	/^	var leader Server$/;"	v
+leaderLoop	server.go	/^func (s *server) leaderLoop() {$/;"	f
+length	log_entry.go	/^	var length int$/;"	v
+logLevel	debug.go	/^var logLevel int = 0$/;"	v
+logResult	log.go	/^type logResult struct {$/;"	t
+logger	debug.go	/^var logger *log.Logger$/;"	v
+loop	server.go	/^func (s *server) loop() {$/;"	f
+mockStateMachine	statemachine_test.go	/^type mockStateMachine struct {$/;"	t
+mutex	server_test.go	/^	var mutex sync.RWMutex$/;"	v
+names	server_test.go	/^	var names []string$/;"	v
+newAppendEntriesRequest	append_entries.go	/^func newAppendEntriesRequest(term uint64, prevLogIndex uint64, prevLogTerm uint64,$/;"	f
+newAppendEntriesResponse	append_entries.go	/^func newAppendEntriesResponse(term uint64, success bool, index uint64, commitIndex uint64) *AppendEntriesResponse {$/;"	f
+newCommand	command.go	/^func newCommand(name string, data []byte) (Command, error) {$/;"	f
+newEvent	event.go	/^func newEvent(typ string, value interface{}, prevValue interface{}) *event {$/;"	f
+newEventDispatcher	event_dispatcher.go	/^func newEventDispatcher(source interface{}) *eventDispatcher {$/;"	f
+newLog	log.go	/^func newLog() *Log {$/;"	f
+newLogEntry	log_entry.go	/^func newLogEntry(log *Log, event *ev, index uint64, term uint64, command Command) (*LogEntry, error) {$/;"	f
+newPeer	peer.go	/^func newPeer(server *server, name string, connectionString string, heartbeatInterval time.Duration) *Peer {$/;"	f
+newRequestVoteRequest	request_vote.go	/^func newRequestVoteRequest(term uint64, candidateName string, lastLogIndex uint64, lastLogTerm uint64) *RequestVoteRequest {$/;"	f
+newRequestVoteResponse	request_vote.go	/^func newRequestVoteResponse(term uint64, voteGranted bool) *RequestVoteResponse {$/;"	f
+newSnapshotRecoveryRequest	snapshot.go	/^func newSnapshotRecoveryRequest(leaderName string, snapshot *Snapshot) *SnapshotRecoveryRequest {$/;"	f
+newSnapshotRecoveryResponse	snapshot.go	/^func newSnapshotRecoveryResponse(term uint64, success bool, commitIndex uint64) *SnapshotRecoveryResponse {$/;"	f
+newSnapshotRequest	snapshot.go	/^func newSnapshotRequest(leaderName string, snapshot *Snapshot) *SnapshotRequest {$/;"	f
+newSnapshotResponse	snapshot.go	/^func newSnapshotResponse(success bool) *SnapshotResponse {$/;"	f
+newTestCluster	test.go	/^func newTestCluster(names []string, transporter Transporter, lookup map[string]Server) []Server {$/;"	f
+newTestServer	test.go	/^func newTestServer(name string, transporter Transporter) Server {$/;"	f
+newTestServerWithLog	test.go	/^func newTestServerWithLog(name string, transporter Transporter, entries []*LogEntry) Server {$/;"	f
+newTestServerWithPath	test.go	/^func newTestServerWithPath(name string, transporter Transporter, p string) Server {$/;"	f
+nextIndex	log.go	/^func (l *Log) nextIndex() uint64 {$/;"	f
+of	event.go	/^\/\/ Type returns the type of event that occurred.$/;"	t
+open	log.go	/^func (l *Log) open(path string) error {$/;"	f
+paths	server_test.go	/^	var paths = make(map[string]string)$/;"	v
+processAppendEntriesRequest	server.go	/^func (s *server) processAppendEntriesRequest(req *AppendEntriesRequest) (*AppendEntriesResponse, bool) {$/;"	f
+processAppendEntriesResponse	server.go	/^func (s *server) processAppendEntriesResponse(resp *AppendEntriesResponse) {$/;"	f
+processCommand	server.go	/^func (s *server) processCommand(command Command, e *ev) {$/;"	f
+processRequestVoteRequest	server.go	/^func (s *server) processRequestVoteRequest(req *RequestVoteRequest) (*RequestVoteResponse, bool) {$/;"	f
+processSnapshotRecoveryRequest	server.go	/^func (s *server) processSnapshotRecoveryRequest(req *SnapshotRecoveryRequest) *SnapshotRecoveryResponse {$/;"	f
+processSnapshotRequest	server.go	/^func (s *server) processSnapshotRequest(req *SnapshotRequest) *SnapshotResponse {$/;"	f
+processVoteResponse	server.go	/^func (s *server) processVoteResponse(resp *RequestVoteResponse) bool {$/;"	f
+promotable	server.go	/^func (s *server) promotable() bool {$/;"	f
+readBytes	log.go	/^	var readBytes int64$/;"	v
+readConf	server.go	/^func (s *server) readConf() error {$/;"	f
+remove	snapshot.go	/^func (ss *Snapshot) remove() error {$/;"	f
+requestVoteHandler	http_transporter.go	/^func (t *HTTPTransporter) requestVoteHandler(server Server) http.HandlerFunc {$/;"	f
+respChan	server.go	/^	var respChan chan *RequestVoteResponse$/;"	v
+runServerWithMockStateMachine	snapshot_test.go	/^func runServerWithMockStateMachine(state string, fn func(s Server, m *mock.Mock)) {$/;"	f
+runTestHttpServers	http_transporter_test.go	/^func runTestHttpServers(t *testing.T, servers *[]Server, transporter *HTTPTransporter, callbacks ...func(Server, *http.Server)) {$/;"	f
+save	snapshot.go	/^func (ss *Snapshot) save() error {$/;"	f
+saveSnapshot	server.go	/^func (s *server) saveSnapshot() error {$/;"	f
+send	http_transporter_test.go	/^func send(c chan bool, s Server) {$/;"	f
+send	server.go	/^func (s *server) send(value interface{}) (interface{}, error) {$/;"	f
+sendAppendEntriesRequest	peer.go	/^func (p *Peer) sendAppendEntriesRequest(req *AppendEntriesRequest) {$/;"	f
+sendAsync	server.go	/^func (s *server) sendAsync(value interface{}) {$/;"	f
+sendSnapshotRecoveryRequest	peer.go	/^func (p *Peer) sendSnapshotRecoveryRequest() {$/;"	f
+sendSnapshotRequest	peer.go	/^func (p *Peer) sendSnapshotRequest(req *SnapshotRequest) {$/;"	f
+sendVoteRequest	peer.go	/^func (p *Peer) sendVoteRequest(req *RequestVoteRequest, c chan *RequestVoteResponse) {$/;"	f
+server	server.go	/^type server struct {$/;"	t
+setCommitIndex	log.go	/^func (l *Log) setCommitIndex(index uint64) error {$/;"	f
+setHeartbeatInterval	peer.go	/^func (p *Peer) setHeartbeatInterval(duration time.Duration) {$/;"	f
+setLastActivity	peer.go	/^func (p *Peer) setLastActivity(now time.Time) {$/;"	f
+setPrevLogIndex	peer.go	/^func (p *Peer) setPrevLogIndex(value uint64) {$/;"	f
+setState	server.go	/^func (s *server) setState(state string) {$/;"	f
+setupLog	test.go	/^func setupLog(entries []*LogEntry) (*Log, string) {$/;"	f
+size	log.go	/^	var size int64$/;"	v
+snapshotHandler	http_transporter.go	/^func (t *HTTPTransporter) snapshotHandler(server Server) http.HandlerFunc {$/;"	f
+snapshotLoop	server.go	/^func (s *server) snapshotLoop() {$/;"	f
+snapshotRecoveryHandler	http_transporter.go	/^func (t *HTTPTransporter) snapshotRecoveryHandler(server Server) http.HandlerFunc {$/;"	f
+startHeartbeat	peer.go	/^func (p *Peer) startHeartbeat() {$/;"	f
+stopHeartbeat	peer.go	/^func (p *Peer) stopHeartbeat(flush bool) {$/;"	f
+sync	log.go	/^func (l *Log) sync() error {$/;"	f
+testCommand1	test.go	/^type testCommand1 struct {$/;"	t
+testCommand2	test.go	/^type testCommand2 struct {$/;"	t
+testStateMachine	test.go	/^type testStateMachine struct {$/;"	t
+testTransporter	test.go	/^type testTransporter struct {$/;"	t
+timeoutChan	server.go	/^	var timeoutChan <-chan time.Time$/;"	v
+trace	debug.go	/^func trace(v ...interface{}) {$/;"	f
+tracef	debug.go	/^func tracef(format string, v ...interface{}) {$/;"	f
+traceln	debug.go	/^func traceln(v ...interface{}) {$/;"	f
+traceln	server.go	/^func (s *server) traceln(v ...interface{}) {$/;"	f
+truncate	log.go	/^func (l *Log) truncate(index uint64, term uint64) error {$/;"	f
+uint64Slice	util.go	/^type uint64Slice []uint64$/;"	t
+updateCommitIndex	log.go	/^func (l *Log) updateCommitIndex(index uint64) {$/;"	f
+updateCurrentTerm	server.go	/^func (s *server) updateCurrentTerm(term uint64, leaderName string) {$/;"	f
+warn	debug.go	/^func warn(v ...interface{}) {$/;"	f
+warnf	debug.go	/^func warnf(format string, v ...interface{}) {$/;"	f
+warnln	debug.go	/^func warnln(v ...interface{}) {$/;"	f
+wg	http_transporter_test.go	/^	var wg sync.WaitGroup$/;"	v
+writeConf	server.go	/^func (s *server) writeConf() {$/;"	f
+writeEntry	log.go	/^func (l *Log) writeEntry(entry *LogEntry, w io.Writer) (int64, error) {$/;"	f
+writeFileSynced	util.go	/^func writeFileSynced(filename string, data []byte, perm os.FileMode) error {$/;"	f

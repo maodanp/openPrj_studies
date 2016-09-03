@@ -1,0 +1,3 @@
+INFO: loading config from /etc/shadowsocks/config.json
+2016-08-18 14:04:18 INFO     loading libcrypto from libcrypto.so.10
+2016-08-18 14:04:18 INFO     starting local at 127.0.0.1:1080
